@@ -169,7 +169,7 @@ li {
 
 
 .header-1st {
-    padding: 10px;
+    padding: 10px 0;
     background: #292929;
     text-align: center;
     /* margin: 0; */
@@ -192,8 +192,13 @@ li {
     flex-direction: column-reverse;
     margin: 4px;
     border-radius: 5px;
+    transition: 0.5s;
 }
-
+.icon_footers-end i:hover {
+    background: #fff;
+    color: var(--buton-color);
+    transition: 0.5s;
+}
 li.main__sec-li a i {
     color: #fff;
 }
@@ -318,10 +323,12 @@ nav.navbar.navbar-expand-lg.navbar-light {
 
 .sec_2-main-heder p {
     margin: 0;
+    font-size: clamp(14px,3vw,16px);
 }
 
 .sec_2-main-heder h4 {
     margin: 0;
+    font-size: clamp(14px,5vw,18px);
 }
 
 .sec_1 {
@@ -398,7 +405,7 @@ li.main__sec-li a {
 .icons_sec-1 img {
     width: 40px;
     height: 40px;
-    border: 2px solid #fff;
+    border: 2px solid var(--buton-color);
     border-radius: 50px;
 }
 
@@ -421,7 +428,7 @@ span.sec-1-clock-icon {
 }
 
 span.sec-1-clock-icon i {
-    color: red;
+    color: var(--buton-color);
     margin-right: 6px;
 }
 
@@ -474,7 +481,7 @@ span.sec-1-clock-icon i {
 }
 
 .tab-button {
-    background-color: #f1f1f1;
+    background-color: #eef8ff;
     border: 1px solid #8080807a;
     padding: 8px 16px;
     cursor: pointer;
@@ -506,7 +513,7 @@ span.sec-1-clock-icon i {
 }
 
 .sec_2-tab-1 {
-    /* margin-top: 40px; */
+    /* margin-top: 20px; */
     /* margin-bottom: 5px; */
     position: relative;
     overflow: hidden;
@@ -516,13 +523,20 @@ span.sec-1-clock-icon i {
     margin: 0 20px;
 }
 
-.sec_2nd-tab-hed-title h3 {
+.sec_2nd-tab-hed-title a > h3 {
     font-size: 20px;
     font-weight: 900;
     color: #000;
-    /* margin-top: 10px; */
+    transition: 0.3s;
+}
+.sec_2nd-tab-hed-title a {
+    text-decoration: none;
 }
 
+.sec_2nd-tab-hed-title a > h3:hover {
+    color: var(--buton-color);
+    transition: 0.3s;
+}
 .sec_2nd-tab-hed-title p {
     font-size: 14px;
     -webkit-line-clamp: 6;
@@ -586,7 +600,7 @@ span.sec-1-clock-icon-1 i {
     justify-content: center;
     color: #fff;
     border: 4px solid #fff8f8eb;
-    font-size: 10px;
+    font-size: 20px;
 }
 
 .sec_2-tab-1::before {
@@ -601,18 +615,7 @@ span.sec-1-clock-icon-1 i {
     transition: 0.5s;
 }
 
-.img_icon-title-1 {
-    position: absolute;
-    right: 0;
-    bottom: -19px;
-    opacity: 0;
-    visibility: hidden;
-    /* transition: all 0.5s; */
-    transition: 0.5s;
-    height: 25px;
-    width: 150px;
-    text-align: center;
-}
+
 
 span.post-media_title {
     font-size: 12px;
@@ -631,29 +634,15 @@ span.post-media_title {
     transition: 0.5s;
 }
 
-.sec_2-tab-1:hover .img_icon-title-1 {
-    bottom: 0px;
-    opacity: 1;
-    visibility: visible;
-    transition: 0.5s;
-    /* height: 25px; */
-    /* width: 150px; */
-    background: #808080a6;
-    border-top-left-radius: 13px;
-    transition: 0.5s;
-    /* border-bottom-right-radius: 8px; */
-    /* text-align: center; */
-}
+
 
 .sec_2-cont {
     margin: 30px 0;
 }
 
-.hed-1 i {
-    color: var(--buton-color);
-    font-size: 26px;
+.read_all > a {
+    text-decoration: none;
 }
-
 .sec_2-cont img {
     width: 100%;
     height: 100%;
@@ -665,7 +654,7 @@ img.img-control {
 
 .sec-2nd-end-bor {
     border-bottom: 1px solid #8080806b;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     padding-bottom: 15px;
 }
 
@@ -1074,7 +1063,7 @@ strong.m_val::before {
 .part-3rd-social {
     display: flex;
     align-items: center;
-    background: #4442423d;
+    background: #eef8ff;
     padding: 10px;
     gap: 20px;
     width: 49%;
@@ -1197,8 +1186,12 @@ strong.m_val::before {
     color: #b9b5b5;
     font-size: 14px;
     font-weight: 600;
+    transition: 0.5s;
 }
-
+.sec_footer-2nd-listee ul>li>a:hover {
+    border-bottom: 1px solid var(--buton-color);
+    transition: all 0.5s;
+}
 .sec_subsribe-footer {
     width: 100%;
     height: 0;
@@ -1432,6 +1425,7 @@ ul.main-lisitn li::before {
     padding: 0;
     line-height: 30px;
     margin-bottom: 20px;
+    /* margin-top: 20px; */
 }
 
 h4.heading-4th {
@@ -1472,10 +1466,11 @@ ul.about-cont-lis {
 
 p.fdfsd {
     margin: 0;
+    margin-bottom: 20px;
 }
 
 .sec-abbpit {
-    background: #ffc0cb59;
+    background: #eef8ff;
     padding: 30px 30px;
     border-radius: 10px;
     position: relative;
@@ -1591,4 +1586,19 @@ p.fdfsd {
     .sec-1-area-icons-1 {
         margin: 10px 0;
     }
+    ul.navbar-nav.mr-auto {
+        height: 80vh;
+        overflow-y: auto;
+        position: relative;
+        justify-content: center;
+    }
+    li.main__sec-li.date_up {
+        position: absolute;
+        top: 20px;
+        right: 0;
+    }
+    ul.navbar-nav.mr-auto li > a {
+        font-size: clamp(26px,3.2vw,70px);
+        line-height: 1.5;
+}
 }
