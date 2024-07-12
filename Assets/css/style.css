@@ -1601,4 +1601,25 @@ p.fdfsd {
         font-size: clamp(26px,3.2vw,70px);
         line-height: 1.5;
 }
+.sec_footer-2nd-listee ul {
+    display: inline-block;
+}
+.sec_footer-2nd-listee {
+    display: flex;
+    justify-content: center;
+}
+.footer-sec-2nd h4 {
+    text-align: center;
+}
+}
+
+
+@media (max-width: 991px) {
+
+    .icon_footers-end{
+        justify-content: center;
+    }
+    .sec_footer-fist {
+        width: 100%;
+    }
 }
