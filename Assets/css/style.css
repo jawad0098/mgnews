@@ -782,13 +782,21 @@ span.byann-2 {
     background: #ffffffde;
 }
 
-.sec-3rd-title h4 {
+.sec-3rd-title > a{
+    text-decoration: none;
+}
+.sec-3rd-title a > h4 {
     font-size: clamp(14px, 3.2vw, 18px);
     color: #000;
     font-weight: 700;
     padding: 6px 20px;
+    transition: 0.4s;
 }
-
+.sec-3rd-title a > h4:hover{
+    transition: 0.4s;
+    color: var(--buton-color);
+    
+}
 .sec-3-area-con {
     display: flex;
     align-items: center;
