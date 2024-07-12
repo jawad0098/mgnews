@@ -933,11 +933,13 @@ span.byann-2 {
 
 .second-2-ri {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    /* align-items: center; */
+    justify-content: space-evenly;
     border-top: 1px solid #2c272729;
     padding-top: 10px;
     padding-bottom: 10px;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .right-2nd-sec-t h5 {
@@ -945,10 +947,23 @@ span.byann-2 {
     font-weight: 900;
     color: #000;
 }
-
+.right-2nd-sec-t a {
+    text-decoration: none;
+}
+.right-2nd-sec-t {
+    padding: 0px 10px;
+    width: 45%;
+    text-align: start;
+    /* margin-top: 20px; */
+}
+.right-2nd-sec-t a {
+    text-decoration: none;
+}
 .sec-rig-img {
     position: relative;
-    width: clamp(100px, 9.2vw, 220px);
+    /* width: clamp(100px, 9.2vw, 220px); */
+    width: 150px;
+    min-width: 150px;
 }
 
 .right-icon-sec-2 {
