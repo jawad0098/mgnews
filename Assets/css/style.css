@@ -1501,7 +1501,7 @@ p.fdfsd {
     content: "";
     height: 100%;
     width: 7px;
-    background: #0088ff;
+    background: var(--buton-color);
     position: absolute;
     left: 0px;
     top: 0;
