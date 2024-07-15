@@ -592,28 +592,7 @@ span.sec-1-clock-icon-1 i {
     margin: 50px 0;
 }
 
-/* .img_icon-in {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.5s;
-}
 
-.img_icon-in i {
-    height: 50px;
-    width: 50px;
-    border-radius: 50px;
-    background: var(--buton-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    border: 4px solid #fff8f8eb;
-    font-size: 20px;
-} */
 
 .sec_2-tab-1::before {
     height: 100%;
@@ -621,12 +600,15 @@ span.sec-1-clock-icon-1 i {
     content: "";
     position: absolute;
     background: #120e0ea6;
-    /* border-radius: 9px; */
     opacity: 0;
     visibility: hidden;
     transition: 0.5s;
 }
-
+.botom:hover .sec_2-tab-1::before{
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s;
+}
 
 
 span.post-media_title {
@@ -634,17 +616,6 @@ span.post-media_title {
     color: #fff;
 }
 
-.sec_2-tab-1:hover::before {
-    opacity: 1;
-    visibility: visible;
-    transition: 0.5s;
-}
-
-/* .sec_2-tab-1:hover .img_icon-in {
-    opacity: 1;
-    visibility: visible;
-    transition: 0.5s;
-} */
 
 
 
@@ -1168,6 +1139,7 @@ strong.m_val::before {
     align-items: center;
     gap: 10px;
     margin-bottom: 10px;
+    justify-content: center;
 }
 
 .part-four .header-sec-2-main {
@@ -1728,7 +1700,7 @@ button#user-ad {
 
 
 
-button.read {
+.img_icon-in2 a {
     background: red;
     border: 0;
     color: #fff;
@@ -1739,15 +1711,24 @@ button.read {
     text-align: center;
     transition: 0.5s;
     padding: 10px;
+    text-decoration: none;
 }
-
+.botom:hover .img_icon-in2 {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s;
+    top: 50%;
+}
 .img_icon-in2 {
     position: absolute;
-    top: 50%;
+    top: 60%;
     transform: translate(-50%, -50%);
     left: 50%;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
 }
-button.read::after {
+a.read::after {
     content: "\f061";
     font-family: 'Font Awesome 6 Pro';
     position: absolute;
@@ -1760,15 +1741,18 @@ button.read::after {
     text-align: center;
     font-size: 10px;
 }
-
-button.read:hover {
+.botom:hover a.read::after {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 1s;
+}
+a.read:hover {
     padding-right: 21px;
     transition: 0.5s;
 }
-button.read:hover::after {
-    visibility: visible;
-    opacity: 1;
-    right: -2;
+ .botom:hover a.read{
+    padding-right: 21px;
+    transition: 0.5s;
 }
  
 
